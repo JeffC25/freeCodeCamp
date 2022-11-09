@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jeff's Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Jeff's Survey</h1>
+      <p id="description">Description placeholder</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label" name="name">Name: <input id="name" type="text" placeholder="Name" required></label>
+      <label id="email-label" name="email">Email: <input id="email" type="email" placeholder="Email"required></label>
+      <label id="number-label" name="age">Age: <input id="number" type="number" placeholder="Age" min="13" max="150" required></label>
+      <p>Dropdown Menu</p>
+      <select id="dropdown" name="dropdown">
+        <option selected disabled required>(select one)</option>
+        <option value="Dropdown 1">Option 1</option>
+        <option value="Dropdown 2">Option 2</option>
+        <option value="Dropdown 3">Option 3</option>
+      </select>
+      <p>Radio Menu</p>
+        <label>
+          <input type="radio" name="radio" class="input-radio" value="radio-option-1">
+          Option 1
+        </label>
+        <label>
+          <input type="radio" name="radio" class="input-radio" value="radio-option-2">
+          Option 2
+        </label>
+        <label>
+          <input type="radio" name="radio" class="input-radio" value="radio-option-3">
+          Option 3
+        </label>
+      <p>Checkbox Menu</p>
+        <label>
+          <input type="checkbox" name="checkbox" class="input-checkbox" value="checkbox-option-1">
+          Option 1
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" class="input-checkbox" value="checkbox-option-2">
+          Option 2
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" class="input-checkbox" value="checkbox-option-3">
+          Option 3
+        </label>
+        <p>Textbox</p>
+        <textarea value="textarea" placeholder="Text Placeholder" name="textarea"></textarea>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
